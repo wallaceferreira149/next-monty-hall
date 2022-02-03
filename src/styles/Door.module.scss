@@ -1,0 +1,74 @@
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: var(--area-porta-largura);
+  // height: var(--area-porta-altura);
+  margin: 5px;
+
+  .estrutura {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    border-left: 5px solid brown;
+    border-top: 5px solid brown;
+    border-right: 5px solid brown;
+    background: #0005;
+    height: var(--area-porta-altura);
+
+    width: 90%;
+
+    .porta {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: center;
+      background: chocolate;
+
+      // width: var(--area-porta-largura);
+
+      padding: 15px;
+
+      .numero {
+        font-size: 3rem;
+        padding: 15px;
+      }
+
+      .macaneta {
+        position: absolute;
+        top: 150px;
+        // left: 15px;
+        align-self: flex-start;
+
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: brown;
+      }
+    }
+  }
+  .chao {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  .selecionada {
+    border-left: 5px solid yellow;
+    border-top: 5px solid yellow;
+    border-right: 5px solid yellow;
+
+    .porta {
+      .numero {
+        color: yellow;
+      }
+
+      .macaneta {
+        background: yellow;
+      }
+    }
+  }
+}
